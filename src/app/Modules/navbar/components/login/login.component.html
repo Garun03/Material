@@ -1,0 +1,29 @@
+<!-- <div class="form-align">
+  <mat-toolbar color="primary">
+    <div class="form">
+      <form class="input" [ formGroup ]="loginForm" (ngSubmit)="loginUser()" >
+        <mat-label>Email :  </mat-label>
+        <input type="email" placeholder="xyz@xyz.com" matInput [formControlName="email"]>
+        <mat-error *ngIf="email.hasError('email') && !email.hasError('required')">Enter a valid email address</mat-error> "></mat-error> <br> <br>
+        <mat-label>Password : </mat-label>
+        <input type="password" placeholder="Password"> <br> <br>
+        <button mat-raised-button color="primary" type="submit">Submit</button> <br> <br>
+        <a routerLink="forgot-password">Forgot-Password  </a>
+        <a routerLink="Reset-password">Reset-Password</a>
+      </form>
+    </div>
+  </mat-toolbar>
+</div> -->
+
+
+
+<div>
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <input type="text" placeholder="enter email" formControlName="email"><br>
+    <span  style="color: red;"  *ngIf="email && email.invalid && email.touched">Email is invalid</span>
+    <input type="password" placeholder="password" formControlName="password"> <br>
+    <span  style="color: red;"  *ngIf="password && password.invalid && password.touched">Password is invalid</span>
+    <button [disabled]="loginForm.invalid" >Submit</button>
+
+  </form>
+</div>

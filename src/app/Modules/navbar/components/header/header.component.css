@@ -1,0 +1,18 @@
+.space{
+  flex : 1 1 auto;
+}
+.nav-item{
+
+}
+
+.nav-item a{
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.nav-item a:hover{
+  color: blue;
+  text-decoration: underline;
+  font-size: 18px;
+}

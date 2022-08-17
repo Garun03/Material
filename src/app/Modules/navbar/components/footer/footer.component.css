@@ -1,0 +1,26 @@
+.footer{
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-item{
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+
+}
+.nav-item a{
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.nav-item a:hover{
+  color: blue;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: bold;
+}
